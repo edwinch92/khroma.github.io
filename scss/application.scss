@@ -1,0 +1,204 @@
+// - - - VARIABLE
+$highlight: #ff7473;
+$dark-highlight: #e66968;
+$dark: #263238;
+$white: #fff;
+$light-bg: #fdfdfd;
+$dark-bg: #34314c;
+// - - - GLOBAL
+body {
+  font-family: 'Raleway', sans-serif;
+  color: $dark;
+}
+
+#header {
+  background-color: $white;
+}
+
+#primary-menu {
+  ul {
+    .current {
+      a {
+        color: $highlight !important;
+      }
+    }
+  }
+}
+
+#content {
+  .content-wrap {
+    padding: 0;
+  }
+}
+
+footer {
+  #copyrights {
+    color: rgba(255, 255, 255, 0.25) !important;
+  }
+}
+
+// - - - WELCOME
+#section-about,
+#section-work,
+#section-contact,
+#section-services {
+  padding: 4em 0;
+}
+
+#slider {
+  p {
+    color: $white;
+  }
+}
+
+#section-about {
+  background-color: $dark-bg;
+  .heading-block {
+    h2 {
+      color: $white;
+      span {
+        color: $highlight;
+      }
+    }
+    &:after {
+      border-color: $white;
+    }
+  }
+  .section-about-desc {
+    p {
+      font-size: 1.3em;
+      color: $white;
+      span {
+        color: $highlight;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+#section-services {
+  background-color: $light-bg;
+  .feature-box {
+    img {
+      height: 100px;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+#section-work {
+  background-color: $dark-bg;
+  .heading-block {
+    h2 {
+      color: $white;
+    }
+    span {
+      color: $white;
+    }
+    &:after {
+      border-color: $white;
+    }
+  }
+  .portfolio-image {
+    background-color: #2b283e;
+    height: 180px;
+    img {
+      width: auto;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  .portfolio-overlay {
+    text-align: center;
+  }
+  .wrapper-button {
+    text-align: center;
+    padding-top: 2em;
+    a {
+      border-radius: 50px;
+      background-color: $white;
+      color: $highlight;
+      &:hover {
+        color: $white;
+        background-color: $highlight !important;
+      }
+    }
+  }
+}
+
+#section-contact {
+  .col-md-6 {
+    text-align: center;
+  }
+  img {
+    border-radius: 10px;
+    margin-bottom: 2em;
+    width: 75%;
+  }
+  p {
+    text-align: center;
+    margin: 0;
+    font-size: 1.2em;
+  }
+  .wrapper-button {
+    text-align: center;
+    a {
+      border-radius: 50px;
+    }
+  }
+}
+
+// - - - WORK
+#work-page {
+  #page-title {
+    margin-bottom: 2em;
+  }
+  .portfolio-image {
+    height: 190px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+  .portfolio-overlay {
+    text-align: center;
+  }
+}
+
+// - - - CONTACT
+#contact-page {
+  #page-title {
+    margin-bottom: 2em;
+  }
+  #content {
+    margin-top: 2em;
+  }
+  img {
+    border-radius: 10px;
+    margin-bottom: 1em;
+  }
+  .col_half {
+    p {
+      margin-bottom: 0px;
+      font-size: .9em;
+      span {
+        color: $highlight;
+        font-weight: 700;
+        font-size: 1.3em;
+        padding-top: 1em;
+      }
+    }
+    form {
+      button {
+        border-radius: 50px;
+        background-color: $highlight;
+        &:hover {
+          background-color: $dark-highlight !important;
+        }
+      }
+    }
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700);
